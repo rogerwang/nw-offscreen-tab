@@ -31,7 +31,7 @@ var camvideo = document.getElementById('monitor');
 function gotStream(stream) 
 {
 	if (window.URL) 
-	{   camvideo.src = window.URL.createObjectURL(stream);   } 
+	{   camvideo.srcObject = stream; }
 	else // Opera
 	{   camvideo.src = stream;   }
 
